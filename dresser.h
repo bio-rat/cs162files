@@ -11,12 +11,16 @@ class Dresser{
 
     public:
 
-    //Constructor
-        //Dresser()
+    /*===Use your constructors to create and shuffle your deck!===*/
+        Dresser();
+    
+
     //Accessors/Getters
         Shirt get_shirt(int);
+
     //Mutators/Setters
         void set_shirt(int, Shirt);
+        
     //Other
         void print_dresser();
         Shirt select_random_shirt();

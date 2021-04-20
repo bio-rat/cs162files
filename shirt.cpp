@@ -1,40 +1,41 @@
 #include "shirt.h"
 
-//Constructors
-    Shirt::Shirt(){
-        num_button = 0;
-        color = " ";
-    }
-    Shirt::Shirt(int b, string c){
-        num_button = b;
-        color = c;
-    }
-    
 
 
-    //Accessors - Getters
-    int Shirt::get_num_buttons(){
-        return num_button;
-    }
+Shirt::Shirt(){
+    num_buttons = 0;
+    color = " ";
+}
 
-    string Shirt::get_color(){
-        return color;
-    }
-
-
-    //Mutators - Setters
-
-    void Shirt::set_num_buttons(int buttons){
-        num_button = buttons;
-    }
-
-    void Shirt::set_color(string c){
-        color = c;
-    }
+Shirt::Shirt(int b, string c){
+    num_buttons = b;
+    color = c;
+}
 
 
 
-    //Other Methods
-    void Shirt::print_shirt(){
-        cout << num_button << " " << color << endl;
-    }
+int Shirt::get_num_buttons(){
+    return num_buttons;
+}
+
+string Shirt::get_color(){
+    return color;
+}
+
+
+
+void Shirt::set_num_buttons(int num_buttons){
+    this -> num_buttons = num_buttons;
+}
+
+void Shirt::set_color(string new_color){
+    color = new_color;
+}
+
+
+void Shirt::print_shirt(){
+    cout << "Your shirt has "<< num_buttons << " buttons and is " << color << endl;
+}
+
+
+

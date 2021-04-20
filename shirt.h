@@ -5,42 +5,31 @@
 #include <string>
 using namespace std;
 
-//Class declaration/member variables:
 class Shirt{
 
     private:
-        int num_button;
+        int num_buttons;
         string color;
+
 
     public:
 
+        //Constructor
+        Shirt();
+        Shirt(int, string);
+        //Getters/Accessors
+        int get_num_buttons();
+        string get_color();
 
-    //Constructors
-    Shirt();
-    Shirt(int, string);
-    
+        //Setters/Mutators
+        void set_num_buttons(int);
+        void set_color(string);
 
-
-    //Accessors - Getters
-    int get_num_buttons();
-
-    string get_color();
-
-
-    //Mutators - Setters
-
-    void set_num_buttons(int);
-
-    void set_color(string);
-
-
-
-    //Other Methods
-    void print_shirt();
-
-
+        //Other
+        void print_shirt();
 
 };
+
 
 
 #endif
